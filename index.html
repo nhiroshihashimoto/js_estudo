@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário Javascript</title>
+    <style>
+        * {margin: 0; padding: 0;box-sizing: border-box;}
+        body { font-family: sans-serif; background-color:#23272a;height: 100vh;}
+        label { color: white; }
+        input { width: 100%; margin-bottom: 10px; background-color: #2c2f33; color: aliceblue;}
+        textarea { width: 280px; max-width: 280px; min-width: 280px; background-color: #2c2f33; color: aliceblue;}
+        button { font-size: 16px; margin: 3px; padding: 4px 8px 4px 8px;}
+        #conteudo {  display: flex; align-items: center; flex-direction: column; height: 100vh; justify-content: center; }
+        .center { display: flex; align-items: center; flex-direction: column; }
+        .input { background: rgba(255,255,255,0.2); border: none; outline: none; padding: 10px 20px; border-radius: 15px; resize: none; border: 1px solid rgba(255,255,255,0.1); }
+        .input:focus { box-shadow: 0 5px 15px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.3); }
+        button { margin-top: 10px; background: white; border: none; padding: 10px 20px; border-radius: 35px; cursor: pointer; }
+        button:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+        button:disabled { background-color: grey; }
+        .timer { font-size: 100px; margin: 30px 30px 30px 30px; }
+        h1, h2 { color: white; text-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+        <h1>Login</h1><br>
+        <form action="." method="GET">
+            <div class="campo">
+                <input type="text" placeholder="Nome" class="input"/>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" class="input"/>
+            </div>
+            <div class="center">
+                <label>Mensagem</label>
+                <textarea cols="30" rows="10" placeholder="Insira algo aqui" class="input"></textarea>
+            </div>
+            <div class="center">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <h1>Cronômetro</h1>
+        <h2 data-js="timer" class="timer">0</h2>
+        <div>
+            <button data-js="resume">Iniciar</button>
+            <button data-js="stop">Parar</button>
+            <button data-js="reset">Resetar</button>
+        </div>
+        <a data-js="caixaEvent" type="box">
+            <button data-js="EventListener">EventListener</button>
+        </a>
+    </div>
+
+    <script src="1-Objects.js"></script>
+    <script src="2-Arrays.js"></script>
+    <script src="3-Functions.js"></script>
+    <script src="4-WrapperObjects.js"></script>
+    <script src="5-TypeOf.js"></script>
+    <script src="6-Herança.js"></script>
+    <script src="7-Json.js"></script>
+    <script src="8-String.js"></script>
+    <script src="9-UseStrinct.js"></script>
+    <script src="10-RegExp.js"></script>
+    <script src="11-DOM+Form.js"></script>
+    <script src="12-sync-async.js"></script>
+    <script src="13-Prototype+Array.js"></script>
+    <script src="14-Debug.js"></script>
+    <script src="15-DOM(EventListener).js"></script>
+    <script src="16-NodeList.js"></script>
+    <script src="17-DOM(Elements).js"></script>
+    <script src="18-Lib-Instância.js"></script>
+    <script src="19-setCSS.js"></script>
+</body>
+</html>
